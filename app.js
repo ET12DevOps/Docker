@@ -11,7 +11,7 @@ var morgan = require('morgan')
 const app = express()
 
 //inicializo puerto de aplicacion desde env file
-const port = process.env.PORT || 3000
+const port = process.env.PORT
 
 //configuracion de morgan
 app.use(morgan('dev'))
