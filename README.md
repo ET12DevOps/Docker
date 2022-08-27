@@ -1,12 +1,12 @@
 # Dockerizar aplicación nodejs
 
-## Aplicación
+## Aplicación (Windows)
 
 - Crear una aplicacion nodejs, con los paquetes **express**, **dotenv** y **nodemon**
 
 - Verificar que el proyecto contega los archivos **gitignore** y **.env**
 
-## Docker
+## Docker (Windows)
 
 En el directorio raíz de la aplicación crear los siguientes archivos con el contenido correspondiente:
 
@@ -70,7 +70,7 @@ sudo apt update
 sudo apt install docker-ce docker-ce-clicontainerd.io docker-compose-plugin
 ```
 
-## Dockerizar aplicación
+## Dockerizar aplicación (Ubuntu)
 
 Para crear una imagen de la aplicación es necesario tener una copia de nuestro código fuente en la máquina virtual. Para ello podemos copiar los archivos mediante **SCP**, **WinSCP** o via **Github** (recomendado)
 
@@ -83,8 +83,8 @@ docker build . -t et12admin/app
 ```
 
 La cadena **et12admin/app** no es obligatorio (es una buena práctica) se puede reemplazar por el nombre de la aplicación directamente.
-
-## Ejecución de imagen docker
+ 
+## Ejecución de imagen docker (Ubuntu)
 
 Una vez creada la imagen docker de nuestra aplicación se debe ejecutar dicha imagen, para ello ejecutamos el siguiente comando:
 
@@ -92,6 +92,6 @@ Una vez creada la imagen docker de nuestra aplicación se debe ejecutar dicha im
 docker run -p 80:3000 -d et12admin/app
 ```
 
-## Verificación 
+## Verificación (Ubuntu)
 
 Para ver si la aplicación se encuentra en ejercución se debe abrir un navegador y colcar en la barra de diracciones la dirección IP del servidor (máquina virtual), se deberia cargar la página de la aplicación
