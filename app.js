@@ -4,8 +4,8 @@ const express = require('express')
 //importo paquete dotenv
 require('dotenv').config()
 
-//importo paquete morgan
-var morgan = require('morgan')
+//importo paquete path
+const path = require('path');
 
 //inicializo aplicacion framework express
 const app = express()
@@ -13,11 +13,9 @@ const app = express()
 //inicializo puerto de aplicacion desde env file
 const port = process.env.PORT
 
-//configuracion de morgan
-app.use(morgan('dev'))
-
+//entrypoint
 app.get('/', (req, res) => {
-    res.status(200).send("Bienvenidos al ejemplo")
+    res.sendFile(path.join(__dirname + '/public/index.html'));
 })
 
 app.listen(port, () => {
