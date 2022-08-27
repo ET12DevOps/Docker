@@ -2,6 +2,6 @@ version: "3.9"
 services:
   web:
     build: .
-    image: jonathan/example
+    image: jonathan/ejemplo
     ports:
       - "80:3000"
