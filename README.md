@@ -38,10 +38,10 @@ CMD [ "node", "app.js" ]
 Para instalar docker primero preparar el ambiente de instalación, ejercutar los siguientes comandos en Ubuntu Server:
 
 ```sh
-sudo apt update
+sudo apt-get update
 ```
 ```sh
-sudo apt install \
+sudo apt-get install \
     ca-certificates \
     curl \
     gnupg \
@@ -64,10 +64,10 @@ Instalación Docker
 Ejecutar los siguientes comandos en Ubuntu Server:
 
 ```sh
-sudo apt update
+sudo apt-get update
 ```
 ```sh
-sudo apt install docker-ce docker-ce-clicontainerd.io docker-compose-plugin
+sudo apt-get install docker-ce docker-ce-clicontainerd.io docker-compose-plugin
 ```
 
 ## Dockerizar aplicación (Ubuntu)
