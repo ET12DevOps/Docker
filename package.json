@@ -1,0 +1,29 @@
+{
+  "name": "docker",
+  "version": "1.0.0",
+  "description": "Ejemplo de dockerizacion de aplicacion",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/et12admin/docker.git"
+  },
+  "keywords": [],
+  "author": "Jonathan Velazquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/et12admin/docker/issues"
+  },
+  "homepage": "https://github.com/et12admin/docker#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19"
+  }
+}
